@@ -14,5 +14,5 @@
 - ./run.sh
 
 ### Example screenshot
-![Sample screenshot](https://github.com/arjunmukherjee/titlefinder/blob/master/images/output.png)
+<img src="images/output.png" alt="sample screenshot" width="350" height="350"/>
 
