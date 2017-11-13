@@ -17,5 +17,5 @@
 - ./run.sh
 
 ### Example screenshot
-<img src="images/output.png" alt="sample screenshot" width="400" height="400"/>
+<img src="images/output.png" alt="sample screenshot" width="500" height="400"/>
 
