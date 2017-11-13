@@ -31,7 +31,7 @@ public class TrieNodeTest {
     @Test
     public void addMovieOnlyAddsUptoCapacity() {
         node.addMovie(new Movie("2009","DE","zudi Star Talk"));
-        assertEquals(node.getMovies().size(), TrieNode.CAPACITY);
+        assertEquals(TrieNode.CAPACITY, node.getMovies().size());
     }
 
     @Test
@@ -51,6 +51,6 @@ public class TrieNodeTest {
         expectedMatches.add(new Movie("2009","DE","judi Star Talk"));
         expectedMatches.add(new Movie("2009","DE","kudi Star Talk"));
 
-        assertEquals(movieMatches, expectedMatches);
+        assertEquals(expectedMatches, movieMatches);
     }
 }

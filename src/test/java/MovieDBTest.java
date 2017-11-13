@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class MovieDBTest {
     private MovieDB movieDB;
@@ -28,6 +29,6 @@ public class MovieDBTest {
 
     @Test
     public void processMovieDataProcessesAValidFile() throws Exception {
-        assert(movieDB.processMovieData("input/input.txt"));
+        assertTrue(movieDB.processMovieData("input/input.txt"));
     }
 }

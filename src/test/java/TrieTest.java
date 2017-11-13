@@ -30,28 +30,28 @@ public class TrieTest {
         expectedList.add(new Movie("2009","DE","Audi Star Talk"));
         expectedList.add(new Movie("2009","DE","budi Star Talk"));
 
-        assertEquals(resultList, expectedList);
+        assertEquals(expectedList, resultList);
     }
 
     @Test
     public void findByInValidPrefix() throws Exception {
         List<Movie> resultList = trie.findByPrefix("invalid");
         List<Movie> expectedList = new LinkedList<>();
-        assertEquals(resultList, expectedList);
+        assertEquals(expectedList, resultList);
     }
 
     @Test
     public void findByNullPrefix() throws Exception {
         List<Movie> resultList = trie.findByPrefix(null);
         List<Movie> expectedList = new LinkedList<>();
-        assertEquals(resultList, expectedList);
+        assertEquals(expectedList, resultList);
     }
 
     @Test
     public void findByEmptyPrefix() throws Exception {
         List<Movie> resultList = trie.findByPrefix("");
         List<Movie> expectedList = new LinkedList<>();
-        assertEquals(resultList, expectedList);
+        assertEquals(expectedList, resultList);
     }
 
 }
