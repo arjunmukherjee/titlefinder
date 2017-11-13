@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,12 +11,18 @@ public class IntegrationTest {
 
     @Before
     public void setUp() throws Exception {
+        TestData.data.clear();
         TestData.data.push("quit");
         TestData.data.push("query st");
         TestData.data.push("query invalid");
         TestData.data.push("process-file input/input.txt");
         TestData.data.push("process-file ");
         TestData.data.push("invalidCommand");
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        TestData.data.clear();
     }
 
     @Test
