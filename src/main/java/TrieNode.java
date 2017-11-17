@@ -19,7 +19,7 @@ public class TrieNode {
 
     public void addMovie(Movie movie) {
         movies.add(movie);
-        if (movies.size() >= (CAPACITY + 1) ) {
+        if (movies.size() > CAPACITY ) {
             movies.pollLast();
         }
     }
