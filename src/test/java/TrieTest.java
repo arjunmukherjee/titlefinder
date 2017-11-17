@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -36,22 +37,19 @@ public class TrieTest {
     @Test
     public void findByInValidPrefix() throws Exception {
         List<Movie> resultList = trie.findByPrefix("invalid");
-        List<Movie> expectedList = new LinkedList<>();
-        assertEquals(expectedList, resultList);
+        assertEquals(Collections.emptyList(), resultList);
     }
 
     @Test
     public void findByNullPrefix() throws Exception {
         List<Movie> resultList = trie.findByPrefix(null);
-        List<Movie> expectedList = new LinkedList<>();
-        assertEquals(expectedList, resultList);
+        assertEquals(Collections.emptyList(), resultList);
     }
 
     @Test
     public void findByEmptyPrefix() throws Exception {
         List<Movie> resultList = trie.findByPrefix("");
-        List<Movie> expectedList = new LinkedList<>();
-        assertEquals(expectedList, resultList);
+        assertEquals(Collections.emptyList(), resultList);
     }
 
 }

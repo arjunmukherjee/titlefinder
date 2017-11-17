@@ -52,9 +52,9 @@ public class MovieDB {
     }
 
     private void updateMovieDB(Movie movie) {
-        String[] movieWords = movie.getTitle().split(TITLE_DELIMITER);
-        for(String words: movieWords) {
-            this.movieDB.insert(words.toLowerCase(), movie);
+        String[] wordsInTitle = movie.getTitle().split(TITLE_DELIMITER);
+        for(String words: wordsInTitle) {
+            this.movieDB.insert(words, movie);
         }
     }
 }
